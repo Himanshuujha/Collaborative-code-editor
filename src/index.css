@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CodeMirror{
+  min-height: 100%;
+  font-size: 20px;
+  line-height: 2;
+  padding-top: 20px;
+}
