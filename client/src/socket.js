@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client'
 
 export const initSocket = async () => {
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    const backendUrl = "https://collaborative-code-editor-server-1.onrender.com";
     console.log(`Connecting to backend URL: ${backendUrl}`);
     const options = {
         'force new connection': true,
@@ -9,5 +9,5 @@ export const initSocket = async () => {
         timeout: 10000,
         transports: ['websocket'],
     };
-    return io(process.env.REACT_APP_BACKEND_URL, options);
+    return io("https://collaborative-code-editor-server-1.onrender.com", options);
 }
